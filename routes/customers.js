@@ -22,4 +22,8 @@ router.get('/', (req, res, next) => {
   res.status(200).json({ customers });
 })
 
+router.put('/:dni', (req, res, next) => {
+  res.status(201).json({ success: true })
+})
+
 module.exports = router;
