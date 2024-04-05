@@ -26,4 +26,13 @@ router.put('/:dni', (req, res, next) => {
   res.status(201).json({ success: true })
 })
 
+router.post('/', (req, res, next) => {
+  const newUser = req.body;
+  res.status(200).json([newUser])
+})
+
+router.delete('/:dni', (req, res, next) => {
+  res.status(204).json({ success: true })
+})
+
 module.exports = router;
